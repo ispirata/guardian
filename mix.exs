@@ -52,7 +52,7 @@ defmodule Guardian.Mixfile do
     [
       {:jose, "~> 1.8"},
       {:poison, "~> 2.2 or ~> 3.0"},
-      {:uuid, ">= 1.1.1"},
+      {:uuid, "~> 1.7.2", hex: "uuid_erl"},
 
       # Optional dependencies
       {:phoenix, "~> 1.0 or ~> 1.2 or ~> 1.3", optional: true},
