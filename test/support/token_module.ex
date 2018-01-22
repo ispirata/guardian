@@ -5,6 +5,7 @@ defmodule Guardian.Support.TokenModule do
   @behaviour Guardian.Token
 
   import Guardian.Support.Utils, only: [send_function_call: 1]
+  alias Guardian.UUID
 
   def token_id do
     send_function_call({__MODULE__, :token_id, []})

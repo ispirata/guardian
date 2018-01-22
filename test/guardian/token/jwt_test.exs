@@ -2,6 +2,7 @@ defmodule Guardian.Token.JwtTest do
   @moduledoc false
 
   use ExUnit.Case, async: true
+  alias Guardian.UUID
 
   defmodule Impl do
     @moduledoc false

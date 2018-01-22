@@ -18,6 +18,7 @@ defmodule Guardian.Phoenix.SocketTest.MySocket do
   use Phoenix.Socket
   import Guardian.Phoenix.Socket
   alias Guardian.Phoenix.SocketTest.Impl
+  alias Guardian.UUID
 
   def connect(%{"guardian_token" => token}, socket) do
     case authenticate(socket, Impl, token) do

@@ -114,7 +114,7 @@ defmodule Guardian.Token.Jwt do
 
   @behaviour Guardian.Token
 
-  alias Guardian.{Config, Token.Jwt.Verify}
+  alias Guardian.{Config, Token.Jwt.Verify, UUID}
   alias JOSE.{JWT, JWS, JWK}
 
   import Guardian, only: [stringify_keys: 1]
